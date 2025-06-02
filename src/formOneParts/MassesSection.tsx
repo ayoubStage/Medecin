@@ -22,12 +22,9 @@ const MassesSection: React.FC<Props> = ({
   contours,
   densites,
   handleMassesDataChange,
-  hoveredOption,
-  setHoveredOption,
 }) => {
 
-  const handleHover = (value: string) => setHoveredOption(value);
-  const handleLeave = () => setHoveredOption("");
+
 
   return (
     <>

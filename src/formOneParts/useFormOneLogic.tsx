@@ -24,11 +24,7 @@ export const useFormOneLogic = (navigate: (path: string) => void) => {
   const [contours, setContours] = useState<string[]>([]); // Mass contours
   const [densites, setDensites] = useState<string[]>([]); // Mass densities
 
-  const handleCheckboxChange = (value: string) => {
-    setSelected((prev) =>
-      prev.includes(value) ? prev.filter((item) => item !== value) : [...prev, value]
-    );
-  };
+ 
   const handleLocalisationChange = (index: number, value: string) => {
     setLocalisations((prev) => {
       const newLocalisations = [...prev];
